@@ -1,0 +1,15 @@
+<div class="p-5">
+    <h1>Realizar pedido</h1>
+    <hr>
+    <form class="form">
+        <label class="from-control">Elige un Cubo</label>
+        <select class="from-select" #selectcubo name="selectcubo">
+            @for(cubo of cubos; track cubo){
+                <option value="{{cubo.idCubo}}">{{cubo.nombre}}</option>
+            }
+        </select>
+        <br>
+        <br>
+        <button class="btn btn-primary" (click)="comprarCubo()">Comprar Cubo</button>
+    </form>
+</div>

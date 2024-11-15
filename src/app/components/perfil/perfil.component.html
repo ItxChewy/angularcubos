@@ -1,0 +1,12 @@
+<div class="p-5">
+    <h1>Mi Perfil</h1>
+    <hr>
+    @if(usuario){
+    <ul>
+        <li>Nombre : {{usuario.nombre}}</li>
+        <li>Email : {{usuario.email}}</li>
+    </ul>
+    }
+    <a class="btn btn-primary" [routerLink]="['/compras']">Mostar Compras</a>
+
+</div>

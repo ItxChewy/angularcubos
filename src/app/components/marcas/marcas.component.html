@@ -1,0 +1,14 @@
+<div class="p-5">
+    <h1>Cubos de la marca {{paramActual}}</h1>
+    @for(cubo of cubos;track cubo){
+        <div class="card" style="width: 18rem;">
+            <img src="{{cubo.imagen}}" class="card-img-top" style="width: 150px; height: 150px;">
+            <div class="card-body">
+              <h5 class="card-title">{{cubo.nombre}}</h5>
+              <p class="card-text">{{cubo.precio}} $</p>
+              <a [routerLink]="['/detalle', cubo.idCubo]"   class="btn btn-primary">Detalle</a>
+            </div>
+          </div>
+    }
+   
+</div>
